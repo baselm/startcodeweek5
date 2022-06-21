@@ -1,14 +1,19 @@
 import CssBaseline from "@mui/material/CssBaseline";
 import React from "react";
-// import SignUp from './SignUp';
-import Signup2 from './components/Signup'
+import Landing from './components/Landing';
+ 
 
 function App() {
+  // comment 
+  /*
+  work 
+  */
   return (
     <div className="App">
       <React.Fragment>
         <CssBaseline />
-   <Signup2 />
+
+    <Landing />
 
       </React.Fragment>
        

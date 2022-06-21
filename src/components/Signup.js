@@ -7,7 +7,7 @@ import TextField from '@mui/material/TextField';
 import Checkbox from '@mui/material/Checkbox';
 import FormControlLabel from '@mui/material/FormControlLabel'; 
 import Button from '@mui/material/Button';
-import Link from '@mui/material/Link';
+import {Link } from 'react-router-dom'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
  import CssBaseline from '@mui/material/CssBaseline';
 const theme = createTheme();
@@ -72,6 +72,7 @@ class SignUp extends Component {
                     required
                     fullWidth
                     name="password"
+                    type="password"
                     label="Password"
                     id="password"
                     autoComplete='new-password'
@@ -91,7 +92,10 @@ class SignUp extends Component {
                 Sign Up
             </Button>
             <Grid item>
-                <Link href="#" variant="body2">
+                <Link 
+                    to="/SignIn"
+                
+                >
                     Already have an account? Sign in
                 </Link>
             </Grid>
