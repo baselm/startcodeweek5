@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
-import { Typography, Card, CardContent, CardHeader, Container, Grid, IconButton, Paper, CardMedia } from '@mui/material'
+import { Typography, Card, CardContent, CardHeader, Container, Grid, IconButton, Paper, CardMedia, CardActions } from '@mui/material'
 import FavoriteBorderSharpIcon from '@mui/icons-material/FavoriteBorderSharp';
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import CheckIcon from '@mui/icons-material/Check';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 export default function ProductCard({product}) {
 
   const [active,setActive]=useState(true)
@@ -14,7 +16,7 @@ export default function ProductCard({product}) {
     <div>
 
    
-      <Card>
+      <Card elevation={2}>
       <CardHeader 
       action= {
         <IconButton onClick={e => {
@@ -45,7 +47,18 @@ export default function ProductCard({product}) {
         {product.description}
 
       </Typography>
+      
       </CardContent>
+      <CardActions sx={{   display: "flex",
+    justifyContent: "space-between"}}>
+      <IconButton>
+         <ShoppingCartIcon color="secondary" />
+        </IconButton>
+
+        <IconButton>
+         <CheckIcon color="error" />
+        </IconButton>
+      </CardActions>
 
     </Card>
     </div>
