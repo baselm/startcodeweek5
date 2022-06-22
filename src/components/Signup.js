@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react'
 import Grid from '@mui/material/Grid'
 import { Typography } from '@mui/material';
 import { Container } from '@mui/material';
@@ -11,11 +11,10 @@ import {Link } from 'react-router-dom'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
  import CssBaseline from '@mui/material/CssBaseline';
 const theme = createTheme();
-class SignUp extends Component {
-
-    render() {  
-        return (
-            <ThemeProvider theme={theme}>
+export default function SignUp() {
+  return (
+    <div>
+    <ThemeProvider theme={theme}>
             <Container component="main" maxWidth='xs'>
             <CssBaseline />
                 <Box
@@ -106,11 +105,7 @@ class SignUp extends Component {
 
             </Container>
             </ThemeProvider>
+            </div>
             
-          
-            
-        );
-    }
+  )
 }
-
-export default SignUp;

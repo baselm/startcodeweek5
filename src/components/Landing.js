@@ -1,17 +1,17 @@
 import React from 'react';
-import {Typography, Grid, Card, CardContent, CardActions, Button} from '@mui/material'; 
+import {Typography, Card, CardContent, CardActions, Container} from '@mui/material'; 
 import {Link} from "react-router-dom";
 function Landing() {
 
 
 
     return (
-        <div>
-             <Typography component="h1" variant='h2'> My Landing Page</Typography>
+   <Container>
+     <Typography component="h1" variant='h2'> My Landing Page</Typography>
      <Card sx={{ minWidth: 275 }}>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi aliquam placeat officiis, delectus beatae labore dolor fuga distinctio explicabo, ratione commodi dolores optio recusandae! Quisquam at unde perferendis quos iste.
         </Typography>
          
       </CardContent>
@@ -32,7 +32,7 @@ function Landing() {
 
             
            
-        </div>
+        </Container>
     );
 }
 

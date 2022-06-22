@@ -1,6 +1,8 @@
 import CssBaseline from "@mui/material/CssBaseline";
 import React from "react";
-import Landing from './components/Landing';
+
+import Products from "./components/Products";
+
  
 
 function App() {
@@ -13,7 +15,7 @@ function App() {
       <React.Fragment>
         <CssBaseline />
 
-    <Landing />
+    <Products />
 
       </React.Fragment>
        

@@ -4,9 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import SignUp from './components/Signup';
+import SignUp from './components/SignUp';
 import SignIn from './components/SignIn';
 import {Routes, Route} from 'react-router-dom'
+import Landing from './components/Landing';
+import Dashboard from './components/Dashboard';
+import Products from './components/Products';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
@@ -14,6 +17,10 @@ root.render(
       <Route path="/" element={<App />}/>
       <Route path="SignUp" element={<SignUp />}/>
       <Route path="SignIn" element={<SignIn />}/> 
+      <Route path="Landing" element={<Landing />}/> 
+      <Route path="Landing" element={<Dashboard />}/> 
+      <Route path="Products" element={<Products />}/> 
+
   </Routes>
   </BrowserRouter>
 );
